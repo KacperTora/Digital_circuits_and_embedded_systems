@@ -1,0 +1,27 @@
+set_property PACKAGE_PIN D7  [get_ports {CLK_100MHz_P}]
+set_property PACKAGE_PIN D6  [get_ports {CLK_100MHz_N}]
+set_property IOSTANDARD LVDS [get_ports CLK_100MHz_*]
+create_clock -period 10.000 -name Clk_100MHz [get_ports CLK_100MHz_P]
+
+set_property PACKAGE_PIN AC2 [get_ports {sw_in[3]}]
+set_property PACKAGE_PIN AE3 [get_ports {sw_in[2]}]
+set_property PACKAGE_PIN AF1 [get_ports {sw_in[1]}]
+set_property PACKAGE_PIN AB1 [get_ports {sw_in[0]}]
+set_property IOSTANDARD LVCMOS12 [get_ports {sw_in[*]}]
+
+set_property PACKAGE_PIN AB6 [get_ports {btn_write}]
+set_property IOSTANDARD LVCMOS12 [get_ports {btn_write}]
+
+set_property PACKAGE_PIN AF2 [get_ports {led_ascii[7]}]
+set_property PACKAGE_PIN AG1 [get_ports {led_ascii[6]}]
+set_property PACKAGE_PIN AE4 [get_ports {led_ascii[5]}]
+set_property PACKAGE_PIN AH1 [get_ports {led_ascii[4]}]
+set_property PACKAGE_PIN AE5 [get_ports {led_ascii[3]}]
+set_property PACKAGE_PIN AH2 [get_ports {led_ascii[2]}]
+set_property PACKAGE_PIN AE7 [get_ports {led_ascii[1]}]
+set_property PACKAGE_PIN AF5 [get_ports {led_ascii[0]}]
+set_property IOSTANDARD LVCMOS12 [get_ports {led_ascii[*]}]
+
+set_property PACKAGE_PIN AE12 [get_ports {OLED_SCL}]
+set_property PACKAGE_PIN AF12 [get_ports {OLED_SDA}]
+set_property IOSTANDARD LVCMOS33 [get_ports OLED_*]
