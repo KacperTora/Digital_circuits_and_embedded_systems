@@ -13,7 +13,7 @@ begin
     process(hex_in)
     begin
         case hex_in is
-            -- Cyfry 0-9
+
             when x"0" => ascii_out <= x"30";
             when x"1" => ascii_out <= x"31";
             when x"2" => ascii_out <= x"32";
@@ -24,7 +24,7 @@ begin
             when x"7" => ascii_out <= x"37";
             when x"8" => ascii_out <= x"38";
             when x"9" => ascii_out <= x"39";
-            -- Litery A-F
+
             when x"A" => ascii_out <= x"41";
             when x"B" => ascii_out <= x"42";
             when x"C" => ascii_out <= x"43";
