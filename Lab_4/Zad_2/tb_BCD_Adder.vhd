@@ -32,17 +32,16 @@ begin
     );
 
     stim_proc: process
-    begin
-        A <= "0010"; B <= "0011"; Cin <= '0'; wait for 20 ns;
-        
-        A <= "0101"; B <= "0111"; Cin <= '0'; wait for 20 ns;
-        
-        A <= "1001"; B <= "1001"; Cin <= '1'; wait for 20 ns;
-        
-        A <= "1000"; B <= "0001"; Cin <= '0'; wait for 20 ns;
-        
-        A <= "1000"; B <= "1000"; Cin <= '0'; wait for 20 ns;
+begin
+    Cin <= '0';
+    for i in 0 to 9 loop
+        for j in 0 to 9 loop
+            A <= std_logic_vector(to_unsigned(i, 4));
+            B <= std_logic_vector(to_unsigned(j, 4));
+            wait for 20 ns;
+        end loop;
+    end loop;
+    wait;
+end process;
 
-        wait;
-    end process;
 end Behavioral;
