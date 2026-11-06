@@ -1,0 +1,16 @@
+set_property PACKAGE_PIN AB6 [get_ports {clk}]
+set_property IOSTANDARD LVCMOS12 [get_ports {clk}]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets {clk}]
+
+set_property PACKAGE_PIN AB1 [get_ports {din[0]}]
+set_property PACKAGE_PIN AF1 [get_ports {din[1]}]
+set_property PACKAGE_PIN AE3 [get_ports {din[2]}]
+set_property PACKAGE_PIN AC2 [get_ports {din[3]}]
+set_property PACKAGE_PIN AC1 [get_ports {din[4]}]
+set_property PACKAGE_PIN AD6 [get_ports {din[5]}]
+set_property PACKAGE_PIN AD1 [get_ports {din[6]}]
+set_property PACKAGE_PIN AD2 [get_ports {din[7]}]
+set_property IOSTANDARD LVCMOS12 [get_ports {din[*]}]
+
+set_property PACKAGE_PIN AF5 [get_ports {y}]
+set_property IOSTANDARD LVCMOS12 [get_ports {y}]
