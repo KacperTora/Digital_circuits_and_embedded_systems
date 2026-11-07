@@ -32,6 +32,8 @@ begin
         
         A <= "0010"; B <= "0100"; wait for 20 ns;
         
+        A <= "0000"; B <= "0000"; wait for 20 ns;
+        
         wait;
     end process;
 end Behavioral;
